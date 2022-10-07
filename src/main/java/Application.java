@@ -17,7 +17,6 @@ public class Application {
             screen.doResizeIfNecessary();
             TerminalSize terminalSize = new TerminalSize(40, 20);
             DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory().setInitialTerminalSize(terminalSize);
-            Terminal terminal = terminalFactory.createTerminal();
             screen.clear();
             screen.setCharacter(10, 10, TextCharacter.fromCharacter('X') [0]);
             screen.refresh();
